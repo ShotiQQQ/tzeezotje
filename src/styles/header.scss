@@ -1,0 +1,27 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.header {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-main;
+  &__container {
+    padding-top: 55px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__call {
+    background-image: url("../img/call.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 33px;
+  }
+}

@@ -1,0 +1,99 @@
+@import "node_modules/normalize.css/normalize";
+@import "_vars.scss";
+@import "_mixins.scss";
+
+@font-face {
+  font-family: 'Poppins';
+  src: local("Poppins-Regular"),
+  url("../fonts/Poppins-Regular.woff2") format("woff2"),
+  url("../fonts/Poppins-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local("Poppins-Medium"),
+  url("../fonts/Poppins-Medium.woff2") format("woff2"),
+  url("../fonts/Poppins-Medium.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local("Poppins-SemiBold"),
+  url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+  url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local("Poppins-Bold"),
+  url("../fonts/Poppins-Bold.woff2") format("woff2"),
+  url("../fonts/Poppins-Bold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus, *:focus-visible {
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  @extend %btn-reset;
+}
+
+ul {
+  @extend %list-reset;
+}
+
+.container {
+  max-width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}

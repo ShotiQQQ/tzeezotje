@@ -1,0 +1,11 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 38px 65px;
+  color: $text-main;
+  background-color: $background;
+}
