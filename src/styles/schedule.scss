@@ -1,0 +1,74 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.schedule {
+  color: $text-dark;
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 178px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__list {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__dish {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__circles {
+    display: flex;
+    padding: 0 12px;
+  }
+  &__circle {
+    width: 5px;
+    height: 5px;
+    background-color: $text-reviews;
+    border-radius: 100px;
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+  &__photos {
+    position: relative;
+    width: 40%;
+    height: 502px;
+    border: 2px solid $text-reviews;
+  }
+  &__photo {
+    position: absolute;
+    &--1 {
+      bottom: -85px;
+      left: -97px;
+    }
+    &--2 {
+      top: -51px;
+      right: -100px;
+    }
+  }
+}

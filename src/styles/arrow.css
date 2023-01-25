@@ -1,0 +1,12 @@
+.arrow {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+}
+.arrow::after {
+  content: url("../img/arrow.svg");
+}
+.arrow--next {
+  transform: rotate(180deg);
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFycm93LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7O0FBQ0E7RUFDRTs7QUFFRjtFQUNFIiwiZmlsZSI6ImFycm93LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hcnJvdyB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHdpZHRoOiAyM3B4O1xyXG4gIGhlaWdodDogMjNweDtcclxuICAmOjphZnRlciB7XHJcbiAgICBjb250ZW50OiB1cmwoXCIuLi9pbWcvYXJyb3cuc3ZnXCIpO1xyXG4gIH1cclxuICAmLS1uZXh0IHtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKDE4MGRlZyk7XHJcbiAgfVxyXG59Il19 */

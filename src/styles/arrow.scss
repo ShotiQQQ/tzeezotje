@@ -1,0 +1,11 @@
+.arrow {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  &::after {
+    content: url("../img/arrow.svg");
+  }
+  &--next {
+    transform: rotate(180deg);
+  }
+}

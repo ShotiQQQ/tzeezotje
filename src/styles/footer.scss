@@ -1,0 +1,14 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.footer {
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

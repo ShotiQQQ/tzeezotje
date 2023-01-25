@@ -1,0 +1,45 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.photos {
+  background-color: $background;
+  color: $text-main;
+  max-height: 605px;
+  margin-bottom: 303px;
+  &__container {
+    padding-top: 68px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__arrows {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88px;
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 50px;
+    max-width: 569px;
+  }
+  &__swiper {
+    max-width: 1920px;
+   &-wrapper {
+     justify-content: center;
+   }
+    &-item {
+      width: 970px;
+    }
+  }
+}

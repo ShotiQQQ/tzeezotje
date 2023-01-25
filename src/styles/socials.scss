@@ -21,5 +21,9 @@
     line-height: 24px;
     border: 1px solid $text-main;
     border-radius: 100px;
+    &--footer {
+      border-color: $text-dark;
+      color: $text-dark;
+    }
   }
 }
