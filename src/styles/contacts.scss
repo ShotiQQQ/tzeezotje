@@ -1,0 +1,121 @@
+@import "mixins";
+@import "vars";
+
+.contacts {
+  color: $text-dark;
+  address {
+    font-style: inherit;
+  }
+  &__container {
+    padding-top: 101px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88px;
+    margin-bottom: 35px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    background-color: $text-reviews;
+    margin-right: 16px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &--call {
+      background-image: url("../img/call-white.svg");
+    }
+    &--mail {
+      background-image: url("../img/sms.svg");
+    }
+    &--clock {
+      background-image: url("../img/clock.svg");
+    }
+    &--map {
+      background-image: url("../img/map.svg");
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: $text-contacts;
+  }
+  &__descr {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-contacts;
+  }
+  &__right {
+    width: 57%;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__inputs {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__wrapper-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(50% - 9.5px);
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+  }
+  &__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  &__input {
+    width: 100%;
+    padding: 28px 16px;
+    border: 1px solid $border-input;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    &--textarea {
+      resize: none;
+      min-height: 125px;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  &__bottom {
+    padding-top: 50px;
+    width: 100%;
+  }
+}

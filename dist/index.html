@@ -5,6 +5,8 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=nl_NL" type="text/javascript">
+  </script>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -232,12 +234,74 @@
             <img class="photos__img" src="./img/photos-1.jpg" alt="bar">
           </li>
           <li class="photos__swiper-item swiper-slide">
-            <img class="photos__img" src="./img/photos-1.jpg" alt="bar">
+            <img class="photos__img" src="./img/photos-2.jpg" alt="bar">
           </li>
           <li class="photos__swiper-item swiper-slide">
-            <img class="photos__img" src="./img/photos-1.jpg" alt="bar">
+            <img class="photos__img" src="./img/photos-3.jpg" alt="hal ondersteboven">
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__wrapper">
+          <div class="contacts__left">
+            <h2 class="contacts__title">Contacts</h2>
+            <address>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <div class="contacts__icon contacts__icon--call"></div>
+                  <div class="contacts__info">
+                    <span class="contacts__subtitle">Phone Number</span>
+                    <a class="contacts__descr" href="tel:+3292825725">+32 9 282 57 25</a>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon contacts__icon--mail"></div>
+                  <div class="contacts__info">
+                    <span class="contacts__subtitle">Email</span>
+                    <a class="contacts__descr" href="mailto:info@email.com">info@email.com</a>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon contacts__icon--clock"></div>
+                  <div class="contacts__info">
+                    <span class="contacts__subtitle">Opening Hours</span>
+                    <span class="contacts__descr" href="#">Everyday from 6 AM - 9 PM</span>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon contacts__icon--map"></div>
+                  <div class="contacts__info">
+                    <span class="contacts__subtitle">Map Street</span>
+                    <span class="contacts__descr" href="#">Jl. Raya Surabaya 2787</span>
+                  </div>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="contacts__right">
+            <form class="contacts__form">
+              <h2 class="contacts__title">have any questions?</h2>
+              <div class="contacts__inputs">
+                <div class="contacts__wrapper-input">
+                  <label class="contacts__label" for="name">Name</label>
+                  <input class="contacts__input" id="name" type="text" placeholder="Input your name">
+                </div>
+                <div class="contacts__wrapper-input">
+                  <label class="contacts__label" for="email">Email</label>
+                  <input class="contacts__input" id="email" type="email" placeholder="Input your email">
+                </div>
+              </div>
+              <label class="contacts__label" for="request">Speciale Request</label>
+              <textarea class="contacts__input contacts__input--textarea" id="request" placeholder="Input your special request"></textarea>
+              <button class="btn btn--contacts">Send</button>
+            </form>
+          </div>
+          <div class="contacts__bottom">
+            <div id="map"></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

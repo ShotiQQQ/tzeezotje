@@ -5,7 +5,7 @@
   background-color: $background;
   color: $text-main;
   max-height: 605px;
-  margin-bottom: 303px;
+  margin-bottom: 307px;
   &__container {
     padding-top: 68px;
   }
@@ -36,7 +36,7 @@
   &__swiper {
     max-width: 1920px;
    &-wrapper {
-     justify-content: center;
+     /*justify-content: center;*/
    }
     &-item {
       width: 970px;
