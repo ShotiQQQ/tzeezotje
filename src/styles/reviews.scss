@@ -8,10 +8,17 @@
     position: relative;
     padding-top: 220px;
     padding-bottom: 220px;
+    @media (max-width: 1024px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
   &__wrapper {
     max-width: 785px;
-    margin: 0 auto;
   }
   &__item {
     display: flex;
@@ -27,6 +34,9 @@
     line-height: 40px;
     text-align: center;
     margin-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
   &__descr {
     font-weight: 400;
@@ -35,6 +45,9 @@
     color: $text-main;
     text-align: center;
     margin-bottom: 40px;
+    @media (max-width: 768px) {
+      line-height: 30px;
+    }
   }
   &__name {
     font-weight: 600;
@@ -42,5 +55,17 @@
     line-height: 40px;
     letter-spacing: .245em;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 19px;
+    }
+  }
+  &__pagination {
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background: $text-main;
   }
 }

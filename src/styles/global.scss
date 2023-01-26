@@ -96,4 +96,8 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  @media (max-width: 340px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }

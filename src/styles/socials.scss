@@ -25,5 +25,10 @@
       border-color: $text-dark;
       color: $text-dark;
     }
+    transition: color .3s, border-color .3s;
+    &:hover {
+      color: $text-reviews;
+      border-color: $text-reviews;
+    }
   }
 }

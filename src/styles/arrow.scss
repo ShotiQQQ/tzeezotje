@@ -1,11 +1,41 @@
+@import "vars";
+
 .arrow {
   position: absolute;
-  width: 23px;
-  height: 23px;
+  svg {
+    path {
+      stroke: $text-main;
+      transition: stroke .3s;
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        stroke: $text-reviews;
+      }
+    }
+  }
   &::after {
-    content: url("../img/arrow.svg");
+    content: '';
   }
   &--next {
-    transform: rotate(180deg);
+    &-reviews {
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+    &-photos {
+      position: static;
+    }
+  }
+  &--prev {
+    &-reviews {
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+    &-photos {
+      position: static;
+    }
   }
 }

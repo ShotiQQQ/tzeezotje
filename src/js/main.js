@@ -3,9 +3,12 @@ const swiperReviews = new Swiper('.reviews__wrapper', {
     nextEl: '.arrow--next-reviews',
     prevEl: '.arrow--prev-reviews',
   },
+  pagination: {
+    el: '.reviews__pagination',
+  },
 });
 
-const swiperPhotos = new Swiper('.swiper', {
+const swiperPhotos = new Swiper('.photos__swiper', {
   navigation: {
     nextEl: '.arrow--next-photos',
     prevEl: '.arrow--prev-photos',

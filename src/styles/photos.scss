@@ -6,13 +6,30 @@
   color: $text-main;
   max-height: 605px;
   margin-bottom: 307px;
+  @media (max-width: 1120px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
   &__container {
     padding-top: 68px;
+    @media (max-width: 768px) {
+      padding-top: 40px;
+    }
   }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  &__text {
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
   &__arrows {
     position: relative;
@@ -20,6 +37,7 @@
     align-items: center;
     justify-content: space-between;
     width: 170px;
+    height: 56px;
   }
   &__title {
     font-weight: 700;
@@ -32,14 +50,20 @@
     line-height: 32px;
     margin-bottom: 50px;
     max-width: 569px;
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
   }
   &__swiper {
     max-width: 1920px;
-   &-wrapper {
-     /*justify-content: center;*/
-   }
     &-item {
       width: 970px;
+      @media (max-width: 1120px) {
+        width: 660px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }

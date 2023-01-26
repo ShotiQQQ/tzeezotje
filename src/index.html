@@ -40,6 +40,11 @@
           </ul>
         </nav>
         <a class="header__call" href="tel: +3292825725">+32 9 282 57 25</a>
+        <button class="header__burger">
+          <span class="header__line header__line--1"></span>
+          <span class="header__line header__line--2"></span>
+          <span class="header__line header__line--3"></span>
+        </button>
       </div>
     </div>
   </header>
@@ -50,7 +55,7 @@
           <h2 class="hero__schedule">open everyday 6am - 9pm</h2>
           <h1 class="hero__title">A bad day with lunch is better than a good day without it.</h1>
           <div class="hero__bottom">
-            <button class="btn">Reserve a table</button>
+            <button class="btn btn--hero">Reserve a table</button>
             <ul class="socials">
               <li class="socials__item">
                 <a class="socials__link" href="#">Fb</a>
@@ -143,8 +148,16 @@
     </section>
     <section class="reviews">
       <div class="container reviews__container">
-        <div class="arrow arrow--prev arrow--prev-reviews swiper-button-prev"></div>
-        <div class="arrow arrow--next arrow--next-reviews swiper-button-next"></div>
+        <div class="arrow arrow--prev arrow--prev-reviews swiper-button-prev">
+          <svg width="23" height="50" viewBox="0 0 23 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.8958 1.89998L2.87917 20.9166C0.633334 23.1625 0.633334 26.8375 2.87917 29.0833L21.8958 48.1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="arrow arrow--next arrow--next-reviews swiper-button-next">
+          <svg width="23" height="50" viewBox="0 0 23 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.10418 1.89998L20.1209 20.9166C22.3667 23.1625 22.3667 26.8375 20.1209 29.0833L1.10419 48.1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <div class="reviews__wrapper swiper">
           <ul class="reviews__list swiper-wrapper">
             <li class="reviews__item swiper-slide">
@@ -173,6 +186,7 @@
             </li>
           </ul>
         </div>
+        <div class="reviews__pagination swiper-pagination"></div>
       </div>
     </section>
     <section class="advantages">
@@ -189,7 +203,7 @@
               </div>
               <img src="./img/advantages-1.jpg" alt="biefstuk" class="advantages__img">
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--middle">
               <img src="./img/advantages-2.jpg" alt="biervaten" class="advantages__img">
               <div class="advantages__info">
                 <h2 class="advantages__title">toffe ambiance</h2>
@@ -223,8 +237,16 @@
             </p>
           </div>
           <div class="photos__arrows">
-            <div class="arrow arrow--prev arrow--prev-photos swiper-button-prev"></div>
-            <div class="arrow arrow--next arrow--next-photos swiper-button-next"></div>
+            <div class="arrow arrow--prev arrow--prev-photos swiper-button-prev">
+              <svg width="23" height="50" viewBox="0 0 23 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.8958 1.89998L2.87917 20.9166C0.633334 23.1625 0.633334 26.8375 2.87917 29.0833L21.8958 48.1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="arrow arrow--next arrow--next-photos swiper-button-next">
+              <svg width="23" height="50" viewBox="0 0 23 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.10418 1.89998L20.1209 20.9166C22.3667 23.1625 22.3667 26.8375 20.1209 29.0833L1.10419 48.1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>

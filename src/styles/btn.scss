@@ -8,7 +8,22 @@
   padding: 38px 65px;
   color: $text-main;
   background-color: $background;
+  transition: color .3s;
+  &:hover {
+    color: $text-reviews;
+  }
+  @media (max-width: 768px) {
+    padding: 30px 55px;
+  }
+  &--hero {
+    @media (max-width: 600px) {
+      margin-bottom: 24px;
+    }
+  }
   &--contacts {
     padding: 38px 104px;
+    @media (max-width: 768px) {
+      padding: 30px 80px;
+    }
   }
 }
