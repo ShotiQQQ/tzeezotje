@@ -18,28 +18,50 @@
 </head>
 <body>
   <header class="header">
+    <div class="header__mobile">
+      <button class="header__close">
+        <span class="header__close-line header__close-line--1"></span>
+        <span class="header__close-line header__close-line--2"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--mobile" href="#schedule">À la carte</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--mobile" href="#advantages">Wijnkaart</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--mobile" href="#photos">Lunchmenu</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--mobile" href="#contacts">Contact</a>
+          </li>
+        </ul>
+        <a class="call call--mobile" href="tel: +3292825725">+32 9 282 57 25</a>
+    </div>
     <div class="container header__container">
       <div class="header__wrapper">
         <a class="header__main" href="index.html">
           <img class="header__logo" src="./img/logo-header.png" alt="Bedrijfslogo tzeezotje">
         </a>
-        <nav class="nav">
+        <nav class="nav nav--desktop">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">À la carte</a>
+              <a class="nav__link" href="#schedule">À la carte</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Wijnkaart</a>
+              <a class="nav__link" href="#advantages">Wijnkaart</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Lunchmenu</a>
+              <a class="nav__link" href="#photos">Lunchmenu</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Contact</a>
+              <a class="nav__link" href="#contacts">Contact</a>
             </li>
           </ul>
         </nav>
-        <a class="header__call" href="tel: +3292825725">+32 9 282 57 25</a>
+        <a class="call call--desktop" href="tel: +3292825725">+32 9 282 57 25</a>
         <button class="header__burger">
           <span class="header__line header__line--1"></span>
           <span class="header__line header__line--2"></span>
@@ -74,7 +96,7 @@
         </div>
       </div>
     </section>
-    <section class="schedule">
+    <section class="schedule" id="schedule">
       <div class="container schedule__container">
         <div class="schedule__wrapper">
            <ul class="schedule__list">
@@ -189,7 +211,7 @@
         <div class="reviews__pagination swiper-pagination"></div>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container advantages__container">
         <div class="advantages__wrapper">
           <ul class="advantages__list">
@@ -227,7 +249,7 @@
         </div>
       </div>
     </section>
-    <section class="photos">
+    <section class="photos" id="photos">
       <div class="container photos__container">
         <div class="photos__wrapper">
           <div class="photos__text">
@@ -264,7 +286,7 @@
         </ul>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container contacts__container">
         <div class="contacts__wrapper">
           <div class="contacts__left">

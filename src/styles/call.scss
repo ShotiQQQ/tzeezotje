@@ -1,0 +1,13 @@
+@import "vars";
+
+.call {
+  background-image: url("../img/call.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 33px;
+  transition: color .3s;
+  &:hover {
+    color: $text-reviews;
+  }
+}

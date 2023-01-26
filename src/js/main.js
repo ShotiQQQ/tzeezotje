@@ -37,3 +37,22 @@ function init(){
   myMap.geoObjects.add(myGeoObject);
 }
 
+const burger = document.querySelector('.header__burger');
+const close = document.querySelector('.header__close');
+const mobileMenu = document.querySelector('.header__mobile');
+const mobileLinks = document.querySelectorAll('.nav__link--mobile');
+
+burger.addEventListener('click', () => {
+  mobileMenu.classList.add('header__mobile--active');
+})
+
+close.addEventListener('click', () => {
+  mobileMenu.classList.remove('header__mobile--active');
+})
+
+mobileLinks.forEach((e) => {
+  e.addEventListener('click', () => {
+    mobileMenu.classList.remove('header__mobile--active');
+  })
+})
+

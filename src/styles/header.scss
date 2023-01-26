@@ -9,6 +9,14 @@
   font-size: 16px;
   line-height: 24px;
   color: $text-main;
+  @media (max-width: 768px) {
+    .nav--desktop {
+      display: none;
+    }
+    .call--desktop {
+      display: none;
+    }
+  }
   &__container {
     padding-top: 55px;
     @media (max-width: 1024px) {
@@ -23,17 +31,6 @@
   &__main {
     @media (max-width: 900px) {
       max-width: 150px;
-    }
-  }
-  &__call {
-    background-image: url("../img/call.svg");
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 33px;
-    transition: color .3s;
-    &:hover {
-      color: $text-reviews;
     }
   }
   &__burger {
@@ -53,5 +50,62 @@
     height: 2px;
     background-color: $text-main;
     border-radius: 10px;
+  }
+  &__mobile {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: $text-dark;
+    background-color: $text-main;
+    padding: 36px 24px;
+    transition: transform .5s;
+    @media (max-width: 768px) {
+      display: flex;
+      transform: translateX(-100%);
+      .nav {
+        &__list {
+          flex-direction: column;
+          margin-bottom: 36px;
+          align-items: flex-start;
+        }
+        &__item {
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+        &__link {
+          font-size: 24px;
+        }
+      }
+    }
+    &--active {
+      transform: translateX(0);
+    }
+  }
+  &__close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 30px;
+    &-line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $text-dark;
+      border-radius: 10px;
+      &--1 {
+        transform: rotate(45deg);
+      }
+      &--2 {
+        transform: rotate(-45deg) translateY(-3px);
+      }
+    }
   }
 }
