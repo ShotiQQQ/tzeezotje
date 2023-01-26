@@ -41,6 +41,16 @@ const burger = document.querySelector('.header__burger');
 const close = document.querySelector('.header__close');
 const mobileMenu = document.querySelector('.header__mobile');
 const mobileLinks = document.querySelectorAll('.nav__link--mobile');
+const order = document.querySelector('.btn--hero');
+const modal = document.querySelector('.modal');
+const send = document.querySelector('.btn--modal');
+const forms = document.querySelectorAll('form');
+
+forms.forEach((e) => {
+  e.addEventListener('submit', (e) => {
+    e.preventDefault();
+  })
+})
 
 burger.addEventListener('click', () => {
   mobileMenu.classList.add('header__mobile--active');
@@ -56,3 +66,36 @@ mobileLinks.forEach((e) => {
   })
 })
 
+
+modal.addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (e.target.id === 'wrapper') {
+    modal.classList.remove('modal--active');
+  }
+})
+order.addEventListener('click', () => {
+  modal.classList.add('modal--active');
+})
+
+send.addEventListener('click', () => {
+  let data = [];
+  let name = document.querySelector('#name2').value;
+  let email = document.querySelector('#email2').value;
+  let request = document.querySelector('#request2').value;
+
+  if (name.length > 0 && email.length > 0 && request.length > 0) {
+    data.push(name);
+    data.push(email);
+    data.push(request);
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+  }
+})
